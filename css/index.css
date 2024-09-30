@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "arial";
+    scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar { 
@@ -164,13 +165,9 @@ div > article > img {
 img.q {
     max-width: 25%;
 }
-div.t {
-    float: right;
-    text-align: center;
-    margin-right: 450px;
-}
+
 div.y {
-    text-align: right;
+    text-align: left;
     margin-right : 110px;
     float: right;
 }
@@ -200,4 +197,90 @@ img.o {
     text-align: left;
     list-style-type:disc;
     margin: 10px 20px;
+}
+
+
+/* ----------------------html+JS-------------------- */
+
+.left-nav {
+    background-color: lightblue;
+    width: 17vw;
+    height: 100%;
+    position: fixed;
+    float: left;
+    overflow: scroll;
+}
+
+.lnavlinks {
+    margin-top: 2vh;
+}
+
+
+.left-nav::-webkit-scrollbar { 
+    /* display: inline; */
+}
+
+.left-nav .left-links{
+    position: relative;
+    padding: 10px 15px 1px 25px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    
+
+}
+
+.mainContentHTML {
+    float: right;
+    width: 83vw;
+    height: 100%;
+    background-color: lightgreen;
+}
+
+.modulus_titel {
+    padding: 2.5vh 3vh;
+    font-size: 8vh;
+    align-items:  left;
+}
+
+
+#first, #opbouw{
+    margin-left: 3vh;
+}
+
+#opbouwimg {
+    width: 100vw;
+    height: auto;
+    padding: 50px 15px 0;
+    margin-left: 3vh;
+    float: left;
+
+}
+.left-text{
+    margin-left: 2vw;
+    float: left;
+}
+.left-textfr{
+    margin-left: 2vw;
+}
+
+.right-text {
+    float: left;
+    text-align: left;
+    width: 40vw;
+}
+#opbouw, #markuptxt {
+    height: 20vh;
+}
+
+.txtmarkup {
+    margin-top: 150px;
+}
+
+#imgmkup {
+ width: 50vh;
+ height: auto;
+ float: right;
+ margin: auto 100px 100px 10px;
 }

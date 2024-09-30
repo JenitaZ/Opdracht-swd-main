@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "arial";
+}
+
+*::-webkit-scrollbar { 
+    display: none;
+}
+
+#home {
+    overflow: hidden
+}
+.layout1 {
+    background-color: white;
+    height: 100vh;
+} 
+
+nav {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 23px;
+    text-decoration: none;
+    float: right;
+    margin-top: 1.5vh;
+}
+
+a {
+    font-size: 18px;
+    display: inline;
+    padding-left: 1vw;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3338ff;
+    text-decoration: underline dotted;
+    transition: .5s;
+}
+
+header {
+    background-color:antiquewhite;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    border-bottom: black 1px solid;
+    padding-bottom: 5px;
+}
+
+
+.navimg {
+    float: left;
+    height: 8vh;
+    margin: 6px 0 0 10px;
+}
+
+
+
+#logo {
+    height: 10vh;
+}
+
+
+footer {
+    background-color:antiquewhite;
+    height: 10vh;
+    border-top: black 1px solid;
+    position: sticky;
+    bottom: 0;
+    height: 10vh;
+}
+
+#img1 {
+    height: 50vh;
+    margin-left: 42vh;
+    margin-top: 15vh;
+}
+
+.titel {
+    font-size: 2vw;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.text-right {
+    float: right;
+    margin: 110px 50vh 0 0px;
+} 
+
+#rechts {
+    float: right;
+    margin: 25px 10px 0 0;
+}
+/*  ---------------doorgroeimogelijkheden------------------------------- */
+
+#opl {
+    width: 40vw;
+   margin-left: 30vw;
+   padding-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.opltxt {
+    margin-left: 30vw;
+    margin-top: 5vh;
+    width: 39vw;
+    border: black 1px solid;
+    padding: 8px;
+}
+
+.textopl {
+    padding-bottom: 18vh;
+}
+
+#dslink {
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+/*  ---------------opleiding + beroepsveld------------------------------- */
+
+div.oplimg {
+    text-align: center;
+    float: right;
+}
+img {
+    max-width: 40%;
+}
+div.b {
+    text-align: right;
+}
+div.c {
+    text-align: left;
+}
+
+.move {
+    margin-bottom: 80px;
+}
+div.d {
+    text-align: left;
+}
+div.e {
+    text-align: right;
+}
+div.f {
+    text-align: center;
+}
+div.g {
+    text-align: left;
+}
+img.i {
+    max-width: 25%;
+}
+
+
+
+div > article > img {
+    max-width: 6%;
+}
+img.q {
+    max-width: 25%;
+}
+div.t {
+    float: right;
+    text-align: center;
+    margin-right: 450px;
+}
+div.y {
+    text-align: right;
+    margin-right : 110px;
+    float: right;
+}
+div.u {
+    float: left;
+    text-align: right;
+    margin-right: 250px;
+}
+img.o {
+    max-width: 100%;
+}
+/* --------------------- */
+#kop {
+    text-align: left;
+    font-size: 20px;
+}
+
+#ja {
+    margin: auto 10px;
+}
+/* ----------------------modulus-------------------- */
+#modtxt {
+    text-align: left;
+}
+ul {
+    float: left;
+}
+.modulus {
+    text-align: left;
+    list-style-type:disc;
+    margin: 10px 20px;
+}

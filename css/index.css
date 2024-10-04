@@ -201,22 +201,24 @@ img.o {
 }
 
 
-/* ----------------------html+JS-------------------- */
+/* ----------------------html-------------------- */
 
 .left-nav {
-     background-color: lightblue; 
+     /* background-color: lightblue;  */
     width: 17vw;
     /* max-height: 400px; */
     height: 120%;
     float: left;
-    overflow: scroll;
+    overflow: hidden;
     top: 0;
     border-right: black 1px solid;
+    
 
 }
 
 .lnavlinks {
     margin-top: 2vh;
+    
 }
 
 .left-nav .left-links{
@@ -226,6 +228,7 @@ img.o {
     text-decoration: none;
     display: block;
     font-size: 18px;
+   
     
     
 
@@ -235,12 +238,11 @@ img.o {
     float: right;
     width: 82vw;
     height: 100%;
-    /* background-color: lightgreen; */
     padding-bottom: 100px;
 
 }
 
-.modulus_titel {
+.modulus_titel, .JS_titel{
     padding: 2.5vh 3vh;
     font-size: 8vh;
     align-items:  left;
@@ -285,4 +287,88 @@ img.o {
  height: auto;
  float: right;
  margin: auto 100px 100px 10px;
+}
+
+/* JS*/
+.JS_titel {
+    text-align: center;
+    margin-right: 8vw;
+    color: #04507c;
+}
+
+.eh {
+    font-size: 5vh;
+    margin-top: 2vh;
+}
+
+#jsimg {
+    height: 49.5vh;
+}
+
+.box {
+    background-color: #eff7fb;
+    width: 25vw;
+    height: fit-content;
+    margin-left: 5vw;
+    padding: 1vh;
+    overflow: scroll;
+    font-size: 17px;
+    
+}
+
+.box2 {
+    height: fit-content;
+    width: 65vw;
+    margin-left: 5vw;
+    margin-top: 5px;
+    padding: 1vh;
+    overflow: hidden;
+    font-size: 17px;
+    border-left: 4px solid #20a9f8;
+    color: #04507c;
+}
+
+.box3 {
+    background-color: #eff7fb;
+    width: 65vw;
+    height: fit-content;
+    margin-left: 5vw;
+    padding: 1vh;
+    overflow: scroll;
+    font-size: 17px;
+}
+
+
+.comment {
+    color: #0a8f0a;
+}
+
+.ball {
+	background: #fff;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+    border: #20a9f8 1.5px solid;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	mix-blend-mode: difference;
+    pointer-events: none
+}
+
+.distance {
+    margin-top: 25px;
+    
+}
+
+#leftsection {
+    float: left;
+    width: 30vw;
+}
+
+#rightsection {
+    float: right;
+    width: 30vw;
+    
 }

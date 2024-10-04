@@ -30,11 +30,80 @@
 
             
         </header>
-        
-        <h1 class="modulus_titel">Javascript</h1>
-        <p class="">Javascript is een scripttaal om je website meer interactief te maken, je voegt je code toe door <br> &nbsp; &lt;script&gt;
-            <br>&emsp; &nbsp; alert('This alert box was called with the onload event');<br>
-            &nbsp; &lt;/script&gt;<br><br> in je code te plaatsen of als je een external file wilt linken:<br> &lt;script src='path-to-javascript-file.js'&gt;&lt;/script&gt;</p><br><br>  
-         <p>Je script plaats je net voor de closing body tag zodat je website sneller laadt, ook kan je 'defer' in je script zetten <u><b> als het external is</b></u><br> Je script laadt dan parallel en wordt pas geëxecuteerd als je webpagina klaar is met laden.</p>
+
+        <section class="left-nav">
+            <div class="lnavlinks">
+                <a href="html.html" class="left-links"><h3>HTML</h3></a>
+                <a href="#opbouw" class="left-links">Opbouw html document</a>
+                <a href="#markuptxt" class="left-links">Marking up text</a>
+                <a href="#void_elem" class="left-links">Void elements</a>
+                </br>
+
+                <a href="" class="left-links"><h3>CSS</h3></a>
+                <a href="" class="left-links">Voorbeeld</a>
+                <a href="" class="left-links">Voorbeeld</a>
+                <a href="" class="left-links">Voorbeeld</a>
+                <a href="" class="left-links">Voorbeeld</a>
+                </br>
+
+                <a href="javascript.html" class="left-links"><h3>Javascript</h3></a>
+                <a href="" class="left-links">Voorbeeld</a>
+                <a href="" class="left-links">Voorbeeld</a>
+                <a href="" class="left-links">Voorbeeld</a>
+                <a href="" class="left-links">Voorbeeld</a>
+                </br>
+
+                <a href="" class="left-links"><h3>PHP</h3></a>
+                <a href="" class="left-links">Voorbeeld</a>
+                <a href="" class="left-links">Voorbeeld</a>
+                <a href="" class="left-links">Voorbeeld</a>
+                <a href="" class="left-links">Voorbeeld</a>
+
+            
+            </div>
+        </section>
+
+
+        <section>
+            <h1 class="JS_titel">Javascript</h1>
+            <p class="left-text box">Javascript is een scripttaal om je website meer interactief te maken, je voegt je code toe door <br><b> &nbsp; &lt;script&gt;
+            <br>&emsp; &nbsp; alert('Beep beep');<br>
+            &nbsp; &lt;/script&gt;</b><br><br> in je code te plaatsen of als je een external file wilt linken:<br><b> &lt;script src='path-to-javascript-file.js'&gt;&lt;/script&gt;</b><br><br>  
+            <br>Je script plaats je net voor de closing body tag zodat je website sneller laadt, <br>ook kan je 'defer' in je script zetten <u><b> als het external is</b></u><br> Je script laadt dan parallel en wordt pas geëxecuteerd als je webpagina klaar is met laden.</p>
+         
+             <img src="img\js_vb.png" alt="voorbeeld van script in html" id="jsimg">
+         </section>
+         <section>
+            <p class="left-text box2">Single line comments: <span class="comment">// Dit is een single line comment</span><br>
+            Multi line comments: <span class="comment">/* Dit is een multi line comment */</span></p>
+         </section>
+
+         <section class="left-text box3 distance">
+            <h1 class="JS_titel eh">Variabelen</h1>
+            <div id="leftsection">
+            <p>Er zijn vier manieren om variabelen te verklaren:</p>
+            <ul class="modulus">
+                <li>Automatisch</li>
+                <li>var</li>
+                <li>let</li>
+                <li>const</li><br>
+            </ul>
+
+            <p>variabelen worden automatisch verklaard als je het voor het eerst gebruikt,<br> maar het is het best als je let of const gebruikt<br></p>
+            </div>
+                <div id="rightsection">  
+                    <ol>
+                        <p> When to Use var, let, or const?</p>
+                        <li>Always declare variables</li>
+                        <li>Always use const if the value should not be changed</li>
+                        <li>Always use const if the type should not be changed (Arrays and Objects)</li>
+                        <li>Only use let if you can't use const</li>
+                        <li>Only use var if you MUST support old browsers.</li>
+                    </ol>
+                </div>
+         </section>
+
+         <div class="ball"></div>
+         <script src="lib\index.js"></script>
     </body>
 </html>

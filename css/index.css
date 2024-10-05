@@ -94,7 +94,14 @@ footer {
     float: right;
     margin: 25px 10px 0 0;
 }
-/*  ---------------doorgroeimogelijkheden------------------------------- */
+
+
+
+
+
+
+
+/*  --------------------------------------------------doorgroeimogelijkheden------------------------------------------------- */
 
 #opl {
     width: 40vw;
@@ -123,7 +130,14 @@ ul {
     text-decoration: underline;
 }
 
-/*  ---------------opleiding + beroepsveld------------------------------- */
+
+
+
+
+
+
+
+/*  ------------------------------------------------opleiding + beroepsveld-------------------------------------------------- */
 
 div.oplimg {
     text-align: center;
@@ -180,7 +194,7 @@ div.u {
 img.o {
     max-width: 100%;
 }
-/* --------------------- */
+
 #kop {
     text-align: left;
     font-size: 20px;
@@ -188,8 +202,11 @@ img.o {
 
 #ja {
     margin: auto 10px;
+
+
+
 }
-/* ----------------------modulus-------------------- */
+/* --------------------------------------------------modulus-------------------------------------------- */
 #modtxt {
     text-align: left;
 }
@@ -201,7 +218,14 @@ img.o {
 }
 
 
-/* ----------------------html-------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------html.html---------------------------------------- */
 
 .left-nav {
      /* background-color: lightblue;  */
@@ -289,25 +313,31 @@ img.o {
  margin: auto 100px 100px 10px;
 }
 
-/* JS*/
+
+
+
+
+
+/* -----------------------------------------------javascript.html--------------------------------------------*/
 .JS_titel {
     text-align: center;
-    margin-right: 8vw;
+    margin-right: 6vw;
     color: #04507c;
 }
 
 .eh {
     font-size: 5vh;
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
 #jsimg {
-    height: 49.5vh;
+    height: 43.2vh;
+    width: 35vw;
 }
 
 .box {
     background-color: #eff7fb;
-    width: 25vw;
+    width: 32.5vw;
     height: fit-content;
     margin-left: 5vw;
     padding: 1vh;
@@ -365,10 +395,51 @@ img.o {
 #leftsection {
     float: left;
     width: 30vw;
+    margin-bottom: 3vh;
 }
 
 #rightsection {
     float: right;
     width: 30vw;
-    
+    margin-bottom: 3vh;
+}
+
+.dropdown-content {
+    display: none;
+} 
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown1:hover .dropdown-content {
+    display: block;
+}
+.dropdown2:hover .dropdown-content {
+    display: block;
+}
+.dropdown3:hover .dropdown-content {
+    display: block;
+}
+
+.woo:hover {
+    background-color: white;
+    width: fit-content;
+    border-radius: 5px;
+    /* color: black; */
+}
+
+.blep {
+    height: 150vh;
+    position:fixed;
+    padding-top: 10vh;
+}
+
+.skreech {
+    float: right;
+    margin-left: 40vh;
+    margin-bottom: 5vh;
+}
+
+.uhh {
+    display:flex;
 }

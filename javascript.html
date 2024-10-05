@@ -6,11 +6,11 @@
             <meta name="viewport" content="width=device-width. initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             
-            <meta name="description" content="Informatie html">
-            <meta name="keywords" content="Opleiding Software Developer html informatie">
+            <meta name="description" content="Informatie javascript">
+            <meta name="keywords" content="Opleiding Software Developer javascript informatie">
             <meta name="author" content="Jenita Zheng">
 
-            <title>HTML</title>
+            <title>Javascript</title>
             <link rel="icon" href="img/smiley.png" type="img/x-icon">    
             <link rel="stylesheet" href="css/index.css" type="text/css">
     </head>
@@ -30,79 +30,114 @@
 
             
         </header>
-
-        <section class="left-nav">
+        
+        <section class="left-nav blep">
             <div class="lnavlinks">
-                <a href="html.html" class="left-links"><h3>HTML</h3></a>
-                <a href="#opbouw" class="left-links">Opbouw html document</a>
-                <a href="#markuptxt" class="left-links">Marking up text</a>
-                <a href="#void_elem" class="left-links">Void elements</a>
-                </br>
+                <div class="dropdown">
+                    <a href="html.html" class="left-links"><h3>HTML</h3></a>
+                    <span class="dropdown-content">
+                        <a href="html.html" class="left-links woo">Opbouw html document</a>
+                    <a href="html.html#markuptxt" class="left-links woo">Marking up text</a>
+                    <a href="html.html#void_elem" class="left-links woo">Void elements</a>
+                    </br></span>
+                </div>
 
-                <a href="" class="left-links"><h3>CSS</h3></a>
-                <a href="" class="left-links">Voorbeeld</a>
-                <a href="" class="left-links">Voorbeeld</a>
-                <a href="" class="left-links">Voorbeeld</a>
-                <a href="" class="left-links">Voorbeeld</a>
-                </br>
+                <div class="dropdown1">
+                    <a href="" class="left-links dropdown"><h3>CSS</h3></a>
+                    <span class="dropdown-content">
+                        <a href="" class="left-links woo">Voorbeeld</a>
+                        <a href="" class="left-links woo">Voorbeeld</a>
+                        <a href="" class="left-links woo">Voorbeeld</a>
+                        <a href="" class="left-links woo">Voorbeeld</a>
+                    </br></span>
+                </div>
 
-                <a href="javascript.html" class="left-links"><h3>Javascript</h3></a>
-                <a href="" class="left-links">Voorbeeld</a>
-                <a href="" class="left-links">Voorbeeld</a>
-                <a href="" class="left-links">Voorbeeld</a>
-                <a href="" class="left-links">Voorbeeld</a>
-                </br>
+                <div class="dropdown2">
+                    <a href="#blop" class="left-links dropwdown"><h3>Javascript</h3></a>
+                    <span class="dropdown-content">
+                        <a href="#vrs" class="left-links woo">Variabelen</a>
+                        <a href="#cds" class="left-links woo">Conditionals</a>
+                        <a href="#fun" class="left-links woo">Functies</a>
+                        <a href="" class="left-links woo">Voorbeeld</a>
+                    </br></span>
+                </div>
 
-                <a href="" class="left-links"><h3>PHP</h3></a>
-                <a href="" class="left-links">Voorbeeld</a>
-                <a href="" class="left-links">Voorbeeld</a>
-                <a href="" class="left-links">Voorbeeld</a>
-                <a href="" class="left-links">Voorbeeld</a>
-
-            
+                <div class="dropdown3">
+                    <a href="" class="left-links"><h3>PHP</h3></a>
+                    <span class="dropdown-content">
+                        <a href="" class="left-links woo">Voorbeeld</a>
+                        <a href="" class="left-links woo">Voorbeeld</a>
+                        <a href="" class="left-links woo">Voorbeeld</a>
+                        <a href="" class="left-links woo">Voorbeeld</a>
+                    </span>
+                </div>
             </div>
         </section>
 
+        <div class="skreech">
+            <section>
+                <h1 class="JS_titel" id="blop">Javascript</h1>
+                <p class="left-text box">Javascript is een scripttaal om je website meer interactief te maken, je voegt je code toe door <br><b> &nbsp; &lt;script&gt;
+                <br>&emsp; &nbsp; alert('Beep beep');<br>
+                &nbsp; &lt;/script&gt;</b><br><br> in je code te plaatsen of als je een external file wilt linken:<br><b> &lt;script src='path-to-javascript-file.js'&gt;&lt;/script&gt;</b><br><br>  
+                <br>Je script plaats je net voor de closing body tag zodat je website sneller laadt, <br>ook kan je 'defer' in je script zetten <u><b> als het external is</b></u><br> Je script laadt dan parallel en wordt pas geëxecuteerd als je webpagina klaar is met laden.</p>
+            
+                <img src="img\js_vb.png" alt="voorbeeld van script in html" id="jsimg">
+            </section>
+            <section>
+                <p class="left-text box2">Single line comments: <span class="comment">// Dit is een single line comment</span><br>
+                Multi line comments: <span class="comment">/* Dit is een multi line comment */</span></p>
+            </section>
 
-        <section>
-            <h1 class="JS_titel">Javascript</h1>
-            <p class="left-text box">Javascript is een scripttaal om je website meer interactief te maken, je voegt je code toe door <br><b> &nbsp; &lt;script&gt;
-            <br>&emsp; &nbsp; alert('Beep beep');<br>
-            &nbsp; &lt;/script&gt;</b><br><br> in je code te plaatsen of als je een external file wilt linken:<br><b> &lt;script src='path-to-javascript-file.js'&gt;&lt;/script&gt;</b><br><br>  
-            <br>Je script plaats je net voor de closing body tag zodat je website sneller laadt, <br>ook kan je 'defer' in je script zetten <u><b> als het external is</b></u><br> Je script laadt dan parallel en wordt pas geëxecuteerd als je webpagina klaar is met laden.</p>
-         
-             <img src="img\js_vb.png" alt="voorbeeld van script in html" id="jsimg">
-         </section>
-         <section>
-            <p class="left-text box2">Single line comments: <span class="comment">// Dit is een single line comment</span><br>
-            Multi line comments: <span class="comment">/* Dit is een multi line comment */</span></p>
-         </section>
+            <section class="left-text box3 distance">
+                <h1 class="JS_titel eh" id="vrs">Variabelen</h1>
+                <div id="leftsection">
+                <p>Er zijn vier manieren om variabelen te verklaren:</p>
+                <ul class="modulus">
+                    <li>Automatisch</li>
+                    <li>var</li>
+                    <li>let</li>
+                    <li>const</li><br>
+                </ul>
 
-         <section class="left-text box3 distance">
-            <h1 class="JS_titel eh">Variabelen</h1>
-            <div id="leftsection">
-            <p>Er zijn vier manieren om variabelen te verklaren:</p>
-            <ul class="modulus">
-                <li>Automatisch</li>
-                <li>var</li>
-                <li>let</li>
-                <li>const</li><br>
-            </ul>
-
-            <p>variabelen worden automatisch verklaard als je het voor het eerst gebruikt,<br> maar het is het best als je let of const gebruikt<br></p>
-            </div>
-                <div id="rightsection">  
-                    <ol>
-                        <p> When to Use var, let, or const?</p>
-                        <li>Always declare variables</li>
-                        <li>Always use const if the value should not be changed</li>
-                        <li>Always use const if the type should not be changed (Arrays and Objects)</li>
-                        <li>Only use let if you can't use const</li>
-                        <li>Only use var if you MUST support old browsers.</li>
-                    </ol>
+                <p>variabelen worden automatisch verklaard als je het voor het eerst gebruikt,<br> maar het is het best als je let of const gebruikt<br></p>
                 </div>
-         </section>
+                    <div id="rightsection">  
+                        <ol>
+                            <p> When to Use var, let, or const?</p>
+                            <li>Always declare variables</li>
+                            <li>Always use const if the value should not be changed</li>
+                            <li>Always use const if the type should not be changed (Arrays and Objects)</li>
+                            <li>Only use let if you can't use const</li>
+                            <li>Only use var if you MUST support old browsers.</li>
+                        </ol>
+                    </div>
+            </section>
 
+            <section class="left-text box3 distance">
+                <h1 class="JS_titel eh" id="cds">Conditionals</h1>
+                <p>Een condiional gebruik je als je wilt weten of iets True of False is.<br> Een veelgebruikte conditional is if...else<br><br>De code die tussen if() staat wordt berekend/ bekeken, als de bewering/ berekening True is dan wordt de code die tussen de curley braces zit uitgevoerd, als het False is dan wordt de code van else uitgevoerd.</p>
+                
+            </section>
+            <p class="left-text box2">let iceCream = "chocolate";<br>
+                if (iceCream === "chocolate") { <br>
+                    &emsp;  alert("Yay, I love chocolate ice cream!");<br>
+                } else {<br>
+                    &emsp;  alert("Awwww, but chocolate is my favorite…");
+                }</p>
+
+                <section class="left-text box3 distance" id="fun">
+                    <h1 class="JS_titel eh" id="cds">Functies</h1>
+                    <p>Functies zijn stukjes code die buiten de rest van de script worden geschreven. Die code worden alleen maar uitgevoerd wanneer de script er expliciet om vraagt. Als een script veel dezelfde code bevat kun je de code die altijd hetzelfde is apart zetten in een functie en die functie telkens opnieuw oproepen.</p><br>
+                    <p>Functies nemen vaak argumenten binnen de haakjes, je kan meerderen argumenten toevoegen als je ze aparthoudt met een komma</p><br>
+                    <p>Je kan ook je eigen functies maken: je begint eerst met het woord function te typen; dit geeft aan dat je een functie wilt aanmaken. Vervolgens geef je een naam aan de functie die kort omschrijft wat ze doet.<br>Een functie oproepen doe je gewoon door de naam van de functie te typen met de () en ; erachter.</p>
+                    <p><br><br>Met de onderstaande code print je "Hallo Wereld".</p>
+                </section>
+                <p class="left-text box2">function hoihallo(){<br>
+                    &emsp;print("Hallo Wereld!");<br>}
+                <br><br>hoihallo();</p>
+        </div>
+        
          <div class="ball"></div>
          <script src="lib\index.js"></script>
     </body>

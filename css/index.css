@@ -10,11 +10,12 @@
 }
 
 #home {
-    overflow: hidden
+    overflow: hidden;
 }
 .layout1 {
     background-color: white;
     height: 100vh;
+    overflow: scroll;
 } 
 
 nav {
@@ -289,9 +290,6 @@ img.o {
     margin-left: 2vw;
     float: left;
 }
-.left-textfr{
-    margin-left: 2vw;
-}
 
 .right-text {
     float: left;
@@ -302,15 +300,13 @@ img.o {
     height: 20vh;
 }
 
-.txtmarkup {
-    margin-top: 150px;
-}
+
 
 #imgmkup {
  width: 50vh;
  height: auto;
  float: right;
- margin: auto 100px 100px 10px;
+ margin: auto 200px 100px 10px;
 }
 
 
@@ -342,9 +338,12 @@ img.o {
     margin-left: 5vw;
     padding: 1vh;
     overflow: scroll;
-    font-size: 17px;
-    
+    font-size: 17px;   
 }
+
+/* .stuk {
+    width: 65vwlk
+} */
 
 .box2 {
     height: fit-content;
@@ -411,15 +410,11 @@ img.o {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.dropdown1:hover .dropdown-content {
-    display: block;
-}
+
 .dropdown2:hover .dropdown-content {
     display: block;
 }
-.dropdown3:hover .dropdown-content {
-    display: block;
-}
+
 
 .woo:hover {
     background-color: white;
@@ -443,3 +438,4 @@ img.o {
 .uhh {
     display:flex;
 }
+

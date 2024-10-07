@@ -1,0 +1,118 @@
+header {
+    background-color:antiquewhite;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    border-bottom: black 1px solid;
+    padding-bottom: 5px;
+    height: 10vh;
+}
+footer {
+    background-color:antiquewhite;
+    height: 10vh;
+    border-top: black 1px solid;
+    position: sticky;
+    bottom: 0;
+}
+<!--Doe deze in je body-->
+
+background {
+    background-color: white;
+    height: 100vh;
+    }
+nav {
+    text-align: right;
+}
+div.a {
+    text-align: center;
+    float: right;
+}
+img {
+    max-width: 40%;
+}
+div.b {
+    text-align: right;
+}
+div.c {
+    text-align: left;
+}
+div.d {
+    text-align: left;
+}
+div.e {
+    text-align: right;
+}
+div.f {
+    text-align: center;
+}
+div.g {
+    text-align: left;
+}
+img.i {
+    max-width: 25%;
+}
+naving {
+    float: left;
+    height: 8vh;
+    margin: 6px 0 0 10px;
+}
+nav {
+    front-size: 16px;
+    color: black;
+    text-align: right;
+    padding: 14px 23px;
+    text-decoration: none;
+    float: right;
+    margin-top: 1.5px;
+}
+header > nav > a {
+    text-decoration: none;
+    color: burlywood;
+}
+div > article > img {
+    max-width: 6%;
+}
+img.q {
+    max-width: 25%;
+}
+div.t {
+    float: right;
+    text-align: center;
+    margin-right: 450px;
+}
+div.y {
+    text-align: right;
+    margin-right : 110px;
+    float: right;
+}
+div.u {
+    float: left;
+    text-align: right;
+    margin-right: 250px;
+}
+img.o {
+    max-width: 100%;
+}
+header > nav > a:hover {
+    color: white;
+}
+section.left {
+    text-align: left;
+    margin-bottom: 50px;
+    float: left;
+    padding-top: 40px 40px;
+}
+div > section > a {
+    text-decoration: none;
+    color: darkred;
+}
+div > section > a:hover {
+    color: black;
+}
+div > section > p {
+    color: darkred;
+}
+section.voorbeeld {
+    text-align: center;
+    margin: 30px;
+}

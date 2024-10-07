@@ -229,7 +229,7 @@ img.o {
 /* --------------------------------------------------html.html---------------------------------------- */
 
 .left-nav {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: 17vw;
     /* max-height: 400px; */
     height: 120%;

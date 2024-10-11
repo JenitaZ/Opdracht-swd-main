@@ -405,7 +405,9 @@ img.o {
 
 .dropdown-content {
     display: none;
+    
 } 
+
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -413,15 +415,45 @@ img.o {
 
 .dropdown2:hover .dropdown-content {
     display: block;
+    
+}
+
+.dropdown3 {
+    margin-left: 5vw;
+    margin-top: 0px;
+    z-index: 201;
+    position: absolute;
+}
+.links {
+    padding: 12px 0 10px 55px;
+    text-decoration: none;
+    background-color: rgb(251, 249, 249, 0.9);
+    width: 8vw;
+    margin: 0px auto auto -50px;
+    display: none;
+}
+
+.links:hover {
+    background-color: rgb(242, 242, 242, 0.9);
+}
+
+#urgh {
+    margin-bottom: 3.4vh;
+    
+}
+
+.dropdown3:hover .links {
+    display: block;
+   
 }
 
 
-.woo:hover {
+/* .woo:hover {
     background-color: white;
     width: fit-content;
     border-radius: 5px;
-    /* color: black; */
-}
+    color: black; 
+} */
 
 .blep {
     height: 150vh;
@@ -439,3 +471,70 @@ img.o {
     display:flex;
 }
 
+/*------------------------------------eigen onderneming----------------------------------------------------------*/
+
+#bsimgleft {
+    float: left;
+    height: 85vh;
+    width: 20vw;
+    margin: 23px auto 20px 20px;
+    position: absolute;
+}
+
+#bsimgright {
+    float: right;
+    height: 85vh;
+    width: 20vw;
+    margin: 20px 20px auto 20px;
+    top: 10vh;
+    right: 0;
+    position: absolute;
+
+}
+
+#onderneming_main {
+    width: 50vw;
+    height: 85vh;
+    margin-right: 40vw;
+    /* border: 1px black dashed; */
+    margin-top: -10vh;
+    position: absolute;
+    top: 22.5vh;
+    left: 25vw;
+}
+
+.onderneming_titel {
+    font-size: 3vw;
+    margin: 5px auto 15px 12px;
+}
+
+.onderneming_maintext {
+    margin: auto 15px;
+}
+
+#imgbdr {
+    border: 1px black solid;
+    position: absolute;
+    left: 10vw;
+    width: 70vw;
+    
+}
+
+.aeee {
+    margin-left: 8.3vw;
+    margin-top: 8vh;
+}
+
+.txtodn {
+    margin-top: -0.5vh;
+    margin-right: 250px;
+    width: 30vw;
+}
+
+.verzekeringen {
+    margin-left: 30px;
+}
+
+.lst {
+    list-style-type: disc;
+}

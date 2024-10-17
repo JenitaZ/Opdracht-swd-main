@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "arial";
+    font-family: Tahoma, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -9,15 +9,33 @@
     display: none;
 }
 
-#home {
+#home, #home1 {
+    height: 100vh;
     overflow: hidden;
+    background-color: white;
+
+}
+
+
+#home1 {
+    background: rgb(2,6,34);
+    background: linear-gradient(340deg, rgba(0,2,0,1) 0%, rgba(10,8,27,20) 28%, rgba(22,11,64,1) 43%, rgba(29,18,81,1) 74%, rgba(10,78,111,1) 100%, rgba(4,115,138,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .layout1 {
+    overflow: scroll;
     background-color: white;
     height: 100vh;
-    overflow: scroll;
+
 } 
 
+.berg {
+    background: url('https://img.freepik.com/premium-vector/abstract-blue-color-background-design_279539-370.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
 nav {
     font-size: 16px;
     color: black;
@@ -26,6 +44,10 @@ nav {
     text-decoration: none;
     float: right;
     margin-top: 1.5vh;
+}
+
+.color {
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
 a {
@@ -51,6 +73,10 @@ header {
     z-index: 100;
 }
 
+#headerhtml{
+    background-color: white;
+    opacity: .9;
+}
 
 .navimg {
     float: left;
@@ -260,17 +286,19 @@ img.o {
 }
 
 .mainContentHTML {
-    float: right;
-    width: 82vw;
+    float: left;
+    width: 80vw;
     height: 100%;
-    padding-bottom: 100px;
+    margin-top: 3vh;
+    padding-bottom: 80px;
+
 
 }
 
 .modulus_titel, .JS_titel{
     padding: 2.5vh 3vh;
     font-size: 8vh;
-    align-items:  left;
+    align-items: left;
 }
 
 
@@ -278,17 +306,31 @@ img.o {
     margin-left: 3vh;
 }
 
+#opbouw {
+    margin-top: -3vh;
+}
+
+#leeruk {
+    padding-top: 8.5vh;
+}
+
+#first{
+    padding-left: 2.2vw;
+}
 #opbouwimg {
     width: 100vw;
     height: auto;
     padding: 50px 15px 0;
     margin-left: 3vh;
-    float: left;
+    float: right;
 
 }
 .left-text{
     margin-left: 2vw;
     float: left;
+}
+.left-text1{
+    padding-left: 2vw;
 }
 
 .right-text {
@@ -299,17 +341,39 @@ img.o {
 #opbouw, #markuptxt {
     height: 20vh;
 }
+ 
+.clip {
+    position: absolute;
+    right: 5.5vw;
+    bottom: 15vh;
 
+}
 
+.luk {
+    position: absolute;
+    bottom: 15vh;
+}
 
+.luk_titel {
+    margin-top: 17vh;
+    margin-left: 1.8vw;
+}
+
+.ey {
+    margin-left: 3.5vw;
+}
 #imgmkup {
  width: 50vh;
  height: auto;
- float: right;
- margin: auto 200px 100px 10px;
+ position: absolute;
+ left:20vw;
+ bottom: -22vh;
 }
 
-
+#up{
+    padding-left: 2.5vw;
+    font-size: 8vh;
+}
 
 
 
@@ -423,27 +487,49 @@ img.o {
     margin-top: 0px;
     z-index: 201;
     position: absolute;
+    
 }
 .links {
     padding: 12px 0 10px 55px;
     text-decoration: none;
-    background-color: rgb(251, 249, 249, 0.9);
+    background-color: rgb(242, 242, 242, 0.9);
     width: 8vw;
     margin: 0px auto auto -50px;
     display: none;
 }
 
-.links:hover {
-    background-color: rgb(242, 242, 242, 0.9);
+.links1 {
+    background-color: rgb(0, 0, 0, .4);
+    color: white;
 }
 
+
+.links:hover {
+    background-color: rgb(242, 242, 242, 0.9);
+
+}
+.links1:hover {
+    background-color: rgb(0, 0, 0, .1);
+    color: white;
+}
 #urgh {
     margin-bottom: 3.4vh;
-    
+    color: white;
+    transition: .5s;
+    text-decoration: none;
 }
+
+#urgh1 {
+    margin-bottom: 3.4vh;
+
+}
+
+
+
 
 .dropdown3:hover .links {
     display: block;
+    
    
 }
 
@@ -501,7 +587,10 @@ img.o {
     position: absolute;
     top: 22.5vh;
     left: 25vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
 
 .onderneming_titel {
     font-size: 3vw;
@@ -513,12 +602,21 @@ img.o {
 }
 
 #imgbdr {
-    border: 1px black solid;
+    border: 1.5px red solid;
     position: absolute;
-    left: 10vw;
+    left: 45vw;
     width: 70vw;
-    
+    height: 49vh;
+    box-shadow: 25px 25px 2px 1px #1a1aff;
 }
+/* 
+#shadow {
+    width: 40vw;
+    height: 50vh;
+    background-color: #3338ff;
+    position: absolute;
+    z-index: -1;
+} */
 
 .aeee {
     margin-left: 8.3vw;
@@ -526,9 +624,11 @@ img.o {
 }
 
 .txtodn {
-    margin-top: -0.5vh;
-    margin-right: 250px;
-    width: 30vw;
+    margin-top: 0;
+    margin-left: 10vw;
+    width: 32vw;
+    float: left;
+    text-shadow: blue 1px 1px;
 }
 
 .verzekeringen {
@@ -538,3 +638,45 @@ img.o {
 .lst {
     list-style-type: disc;
 }
+
+.bliep {
+  float: right;
+  margin-right: 150px;
+}
+
+#vid {
+    margin-right: 10px;
+}
+
+.recolor {
+    color: white;
+    line-height: 1.2;
+
+}
+
+#recolor {
+    border: none;
+    background-color: rgb(0, 0, 0, .4)
+}
+
+a.recolor:hover {
+    color: white;
+}
+
+
+
+.position {
+    margin-top: -2px;
+}
+
+.txtmarkup {
+    position: absolute;
+    bottom: 17vh;
+}
+
+.txtmarkup1 {
+    position: absolute;
+    bottom: 8vh;
+    width: 31vw;
+}
+

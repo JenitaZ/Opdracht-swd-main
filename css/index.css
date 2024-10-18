@@ -1,7 +1,26 @@
+:root {
+    --font-family: Tahoma, Geneva, Tahoma, sans-serif;
+    --font-size-headings: 8vh;
+    --font-size: 18px;
+    --topnav-color: antiquewhite;
+    
+    /*mysql*/
+    --bg-gradient: linear-gradient(340deg, rgba(0,2,0,1) 0%, rgba(10,8,27,20) 28%, rgba(22,11,64,1) 43%, rgba(29,18,81,1) 74%, rgba(10,78,111,1) 100%, rgba(4,115,138,1) 100%);
+    --box-shadow-color: #1a1aff;
+    /*html*/
+    --orange: #da6739;; 
+    --gray-ish: #3f3d39;
+    
+    /* javascript */
+    --box-color: #eff7fb;
+    --title-color-js: #04507c;
+    --border-color: #20a9f8;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Tahoma, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-family);
     scroll-behavior: smooth;
 }
 
@@ -19,7 +38,7 @@
 
 #home1 {
     background: rgb(2,6,34);
-    background: linear-gradient(340deg, rgba(0,2,0,1) 0%, rgba(10,8,27,20) 28%, rgba(22,11,64,1) 43%, rgba(29,18,81,1) 74%, rgba(10,78,111,1) 100%, rgba(4,115,138,1) 100%);
+    background: var(--bg-gradient);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -30,14 +49,27 @@
 
 } 
 
+.intro {
+    /* font-size: 2.2vh;
+    position: absolute;
+    right: 25vw;
+    top: 25vh;
+    width: 30vw;
+    margin-left: 3vw; */
+    float: left;
+    margin-top: 25vh;
+    padding-left: 2vw;
+}
+
 .berg {
-    background: url('https://img.freepik.com/premium-vector/abstract-blue-color-background-design_279539-370.jpg');
+    background:#fffcf2;
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
+    color: var(--gray-ish)
 }
 nav {
-    font-size: 16px;
+    font-size: var(--font-size);
     color: black;
     text-align: center;
     padding: 14px 23px;
@@ -47,24 +79,36 @@ nav {
 }
 
 .color {
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: #d5cbc2;
+}
+
+.htmlnav {
+    color: #7a695a;
+}
+
+.htmlnav1 {
+    color: var(--gray-ish)
+}
+
+.htmlnav:hover, .htmlnav1:hover {
+    color: var(--orange);
 }
 
 a {
-    font-size: 18px;
+    font-size: var(--font-size);
     display: inline;
     padding-left: 1vw;
     text-decoration: none;
 }
 
 a:hover {
-    color: #3338ff;
+    color: var(--box-shadow-color);
     text-decoration: underline dotted;
-    transition: .5s;
+    transition: .3s;
 }
 
 header {
-    background-color:antiquewhite;
+    background-color: var(--topnav-color);
     position: sticky;
     top: 0;
     overflow: hidden;
@@ -74,8 +118,15 @@ header {
 }
 
 #headerhtml{
-    background-color: white;
-    opacity: .9;
+    background-color: #252422;;
+}
+
+.ornage {
+    color: var(--orange);
+}
+
+.ornage:hover {
+    color: white;
 }
 
 .navimg {
@@ -92,7 +143,7 @@ header {
 
 
 footer {
-    background-color:antiquewhite;
+    background-color: var(--topnav-color);
     height: 10vh;
     border-top: black 1px solid;
     position: sticky;
@@ -102,8 +153,12 @@ footer {
 
 #img1 {
     height: 50vh;
-    margin-left: 42vh;
-    margin-top: 15vh;
+    /* position: absolute;
+    top: 25vh;
+    left: 20vw;
+    padding-right: 3vw; */
+    float: left;
+    margin: 15vh 3vw auto 20vw;
 }
 
 .titel {
@@ -153,7 +208,7 @@ ul {
 }
 
 #dslink {
-    font-size: 15px;
+    font-size: var(--font-size);
     text-decoration: underline;
 }
 
@@ -224,7 +279,7 @@ img.o {
 
 #kop {
     text-align: left;
-    font-size: 20px;
+    font-size: var(--font-size);
 }
 
 #ja {
@@ -278,7 +333,7 @@ img.o {
     width: 100%;
     text-decoration: none;
     display: block;
-    font-size: 18px;
+    font-size: var(--font-size);
    
     
     
@@ -296,9 +351,10 @@ img.o {
 }
 
 .modulus_titel, .JS_titel{
-    padding: 2.5vh 3vh;
-    font-size: 8vh;
+    padding: 2.5vh 15vh;
+    font-size: var(--font-size-headings);
     align-items: left;
+    margin-left: -80px;
 }
 
 
@@ -356,7 +412,7 @@ img.o {
 
 .luk_titel {
     margin-top: 17vh;
-    margin-left: 1.8vw;
+    margin-left: -3.5vw;
 }
 
 .ey {
@@ -372,7 +428,7 @@ img.o {
 
 #up{
     padding-left: 2.5vw;
-    font-size: 8vh;
+    font-size: var(--font-size-headings);
 }
 
 
@@ -382,11 +438,23 @@ img.o {
 .JS_titel {
     text-align: center;
     margin-right: 6vw;
-    color: #04507c;
+    color: var(--title-color-js);
 }
 
+#js_nav {
+    background: white;
+    background: url('https://media.istockphoto.com/id/1371944453/vector/blue-abstract-wave-background.jpg?s=612x612&w=0&k=20&c=uaCU_xpsKQLnbnvJH99iAi9uUqEAoS4jcyDwHXlLq5M=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+
+}
+
+#js_navcolor {
+    background: white;
+}
 .eh {
-    font-size: 5vh;
+    font-size: var(--font-size-headings);
     margin-top: 1vh;
 }
 
@@ -396,13 +464,13 @@ img.o {
 }
 
 .box {
-    background-color: #eff7fb;
+    background-color: var(--box-color);
     width: 32.5vw;
     height: fit-content;
     margin-left: 5vw;
     padding: 1vh;
     overflow: scroll;
-    font-size: 17px;   
+    font-size: var(--font-size);   
 }
 
 /* .stuk {
@@ -416,19 +484,19 @@ img.o {
     margin-top: 5px;
     padding: 1vh;
     overflow: hidden;
-    font-size: 17px;
-    border-left: 4px solid #20a9f8;
-    color: #04507c;
+    font-size: var(--font-size);
+    border-left: 4px solid var(--border-color);
+    color: var(--title-color-js);
 }
 
 .box3 {
-    background-color: #eff7fb;
+    background-color: var(--box-color);
     width: 65vw;
     height: fit-content;
     margin-left: 5vw;
     padding: 1vh;
     overflow: scroll;
-    font-size: 17px;
+    font-size: var(--font-size);
 }
 
 
@@ -441,7 +509,7 @@ img.o {
 	width: 110px;
 	height: 110px;
 	border-radius: 50%;
-    border: #20a9f8 1.5px solid;
+    border: var(--border-color) 1.5px solid;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -492,7 +560,7 @@ img.o {
 .links {
     padding: 12px 0 10px 55px;
     text-decoration: none;
-    background-color: rgb(242, 242, 242, 0.9);
+    background-color: var(--transparent-gray);
     width: 8vw;
     margin: 0px auto auto -50px;
     display: none;
@@ -505,7 +573,7 @@ img.o {
 
 
 .links:hover {
-    background-color: rgb(242, 242, 242, 0.9);
+    background-color: var(--transparent-gray);
 
 }
 .links1:hover {
@@ -548,8 +616,7 @@ img.o {
 }
 
 .skreech {
-    float: right;
-    margin-left: 40vh;
+    margin-left: 30vh;
     margin-bottom: 5vh;
 }
 
@@ -607,7 +674,7 @@ img.o {
     left: 45vw;
     width: 70vw;
     height: 49vh;
-    box-shadow: 25px 25px 2px 1px #1a1aff;
+    box-shadow: 25px 25px 2px 1px var(--box-shadow-color);
 }
 /* 
 #shadow {
@@ -628,7 +695,7 @@ img.o {
     margin-left: 10vw;
     width: 32vw;
     float: left;
-    text-shadow: blue 1px 1px;
+    text-shadow: var(--box-shadow-color) 1px 1px;
 }
 
 .verzekeringen {

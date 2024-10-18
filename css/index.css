@@ -15,6 +15,9 @@
     --box-color: #eff7fb;
     --title-color-js: #04507c;
     --border-color: #20a9f8;
+    /*eigen onderneming*/
+    --transparent-gray: rgb(242, 242 242 .8); 
+   
 }
 
 * {
@@ -571,7 +574,10 @@ img.o {
     color: white;
 }
 
-
+.bg {
+    background: white;
+    width: 10vw;
+}
 .links:hover {
     background-color: var(--transparent-gray);
 

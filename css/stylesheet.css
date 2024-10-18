@@ -6,6 +6,7 @@ header {
     border-bottom: black 1px solid;
     padding-bottom: 5px;
     height: 10vh;
+    z-index: 100;
 }
 footer {
     background-color:antiquewhite;
@@ -39,9 +40,6 @@ div.c {
 div.d {
     text-align: left;
 }
-div.e {
-    text-align: right;
-}
 div.f {
     text-align: center;
 }
@@ -67,7 +65,7 @@ nav {
 }
 header > nav > a {
     text-decoration: none;
-    color: burlywood;
+    color: #a68a64;
 }
 div > article > img {
     max-width: 6%;
@@ -94,7 +92,7 @@ img.o {
     max-width: 100%;
 }
 header > nav > a:hover {
-    color: white;
+    color: #6c584c;
 }
 section.left {
     text-align: left;
@@ -102,17 +100,85 @@ section.left {
     float: left;
     padding-top: 40px 40px;
 }
-div > section > a {
-    text-decoration: none;
-    color: darkred;
-}
-div > section > a:hover {
-    color: black;
-}
-div > section > p {
-    color: darkred;
-}
 section.voorbeeld {
     text-align: center;
     margin: 30px;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #ead2ac;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #323031;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: burlywood;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: floralwhite;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+img.uiux {
+    float: left;
+    text-align: left;
+    max-width: 45vh;
+}
+div.ux {
+    text-align: left;
+    margin: 100px auto;
+}
+img.uximg {
+    float: right;
+    text-align: right;
+    max-width: 250vh;
+}
+img.beroep {
+    max-width: 30vh;
+}
+img.plan {
+    max-width: 50%
 }

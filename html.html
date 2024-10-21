@@ -3,7 +3,7 @@
 <html lang="nl">
     <head>
         <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width. initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             
             <meta name="description" content="Informatie over modulus: HTML">
@@ -13,11 +13,23 @@
             <title>HTML</title>
             <link rel="icon" href="img/smiley.png" type="img/x-icon">    
             <link rel="stylesheet" href="css/index.css" type="text/css">
+            
     </head>
     
     <body class="layout1 berg">
+        <div class="dropdown-html">
+            <button onclick="myFunction()" class="dropbtn">nav</button>
+                    <div id="myDropdown" class="dropdown-content-html">
+                        <a href="index.html">Home</a>
+                        <a href="De opleiding.html">De opleiding</a>
+                        <a href="De beroepsveld.html">Het beroepenveld</a>
+                        <a href="doorgroeimogelijkheden.html">Onderzoek doorgroeimogelijkheden</a>
+                    </div>
+        </div>
+
+        <div class="color-bg"></div>
         <header id="headerhtml">
-            <nav id="nav">
+            <nav>
                 <a href="index.html" class="ornage">Home</a>
                 <a href="De opleiding.html" class="ornage">De opleiding</a>
                 <a href="De beroepsveld.html" class="ornage">Het beroepenveld</a>
@@ -32,10 +44,13 @@
                         
                     </a>
                 </a>
+           
+                <!-- sssssssssssssssssssssssssssssssssss -->
+
             </article>
             
         </header>
-        
+        <!-- ---------------desktop nav------------------------------- -->
         <aside class="left-nav color">
             <div class="lnavlinks">
                 <a href="#HTML" class="left-links htmlnav1"><h3>HTML</h3></a>
@@ -55,39 +70,60 @@
                 <a href="Motion Plannen.html" class="left-links htmlnav1"><h3>Motion Plannen</h3></a>
                 <a href="ui ux design.html" class="left-links htmlnav1"><h3>UI/UX Design</h3></a>
                 
-            
-                
             </div>
-            
+            <!-- -------------------mobile nav--------------------------- -->
+          
         </aside>
 
         <div class="mainContentHTML">
-            <h1 class="onderneming_titel" id="up">HTML</h1>
-            <section id="first">
-                    <p id="start">HTML (HyperText markup Language) is een programmeertaal die wordt gebruikt voor het schrijven van webpagina's</br>
+            
+            <section class="first">
+                <h1 class="onderneming_titel" id="up">HTML</h1>
+                    <p class="left-text2">HTML (HyperText markup Language) is een programmeertaal die wordt gebruikt voor het schrijven van webpagina's</br>
                         HTML kan ook deels de vormgeving en styling kan verzorgen, doen we dit meestal met een andere taal: CSS (Cascading Style Sheet).
                         <br>Het is de standaard opmaaktaal voor webpagina's. <br>Documenten in HTML kunnen geopend en gelezen worden door een webbrowser om vervolgens als webpagina weergegeven te worden</p>
             </section>
                 <img src="img\opbouw_html.png" alt="Voorbeeld van de opbouw van een HTML pagina" id="opbouwimg">
-            
-            
-            <section id="luk">  </br>  
                 
-                    <section id="opbouw">  </br>  
-                        <h1 class="modulus_titel">Opbouw html bestand</h1>
-                        <p class="left-text1">Hier is een (low res) voorbeeld hoe de opbouw van een HTML pagina eruit ziet,</br>
+            <section id="opbouw" class="first">  </br>  
+                <h1 class="onderneming_titel">Opbouw html bestand</h1>
+                <p class="left-text2 ">Hier is een voorbeeld hoe de opbouw van een HTML pagina eruit ziet,</br>
                             Een HTML pagina begint met een DOCTYPE-declaratie, wat informatie aan de browser geeft over wat voor document type het is.</br></br>
                             Vervolgens krijg je de tag die het HTML document opent, gevolgd door de “head” tag.</br> Binnen deze “head” tag geven we onder andere de titel en de links van de stylesheets door. Vlak onder de “head” komt de “body”.</br> Binnen de “body” komt de gehele opbouw en inhoud van de pagina.</p>
-                    </section>       
+            </section>       
                     
-                    <section id="leeruk">
-                            <h1 class="modulus_titel luk_titel">Leeruitkomsten</h1>
-                            <p class="left-text ey">Je gaat in deze modulus dus leren hoe je de basis van je webpagina maak en hoe je de structuur ervan bepaald. 
-                    </section>
+            <section id="leeruk" class="first">
+                    <h1 class="onderneming_titel">Leeruitkomsten</h1>
+                    <p class="left-text2">Je gaat in deze modulus dus leren hoe je de basis van je webpagina maak en hoe je de structuur ervan bepaald. 
+            </section>
         
 
         </div>
-    </footer>
+
+        <footer class="footer-html">
+        </footer>
     
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
     </body>
 </html>

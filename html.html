@@ -18,7 +18,7 @@
     
     <body class="layout1 berg">
         <div class="dropdown-html">
-            <button onclick="myFunction()" class="dropbtn">nav</button>
+            <img src="img\dropdown-menu.png" onclick="myFunction()" class="dropbtn">
                     <div id="myDropdown" class="dropdown-content-html">
                         <a href="index.html">Home</a>
                         <a href="De opleiding.html">De opleiding</a>
@@ -27,6 +27,7 @@
                     </div>
         </div>
 
+                <!-- sssssssssssssssssssssssssssssssssss -->
         <div class="color-bg"></div>
         <header id="headerhtml">
             <nav>
@@ -101,29 +102,15 @@
         </div>
 
         <footer class="footer-html">
+            <a href="css.html" class="left-links htmlnav1"><h3>CSS</h3></a>
+                <a href="php.html" class="left-links htmlnav1"><h3>PHP</h3></a>
+                <a href="mysql.html" class="left-links htmlnav1"><h3>MySQL</h3></a>
+                <a href="Onderneming.html" class="left-links htmlnav1"><h3>Eigen Onderneming</h3></a>
+                <a href="Motion Plannen.html" class="left-links htmlnav1"><h3>Motion Plannen</h3></a>
+                <a href="ui ux design.html" class="left-links htmlnav1"><h3>UI/UX Design</h3></a>
         </footer>
     
 
-        <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-        </script>
+        <script src="lib/dropdown.js"></script>
     </body>
 </html>

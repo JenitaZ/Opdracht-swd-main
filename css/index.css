@@ -825,17 +825,21 @@ a.recolor:hover {
   }
 
   .dropbtn {
-    background-color: #3498DB;
+    background-color: none;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    height: 9.7vh;
+    height: 4.9vh;
+
+    position: absolute;
+    right: 0;
+    z-index: 200;
   }
   
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: none;
   }
   
   .dropdown {
@@ -846,12 +850,13 @@ a.recolor:hover {
   .dropdown-content-html {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--topnav-color);
     min-width: 100vw;
     overflow: auto;
     z-index: 200;
     right: 0;
     text-align: center;
+    top: 10vh;
   }
   
   .dropdown-content-html a {
@@ -860,9 +865,12 @@ a.recolor:hover {
     text-decoration: none;
     display: block;
     z-index: 200;
+    top: 4.9vh;
   }
   
-  .dropdown a:hover {background-color: #ddd;}
+  .dropdown a:hover {
+    background-color: var(--header-color-html);
+}
   
   .show {display: block;}
 }

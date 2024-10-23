@@ -67,12 +67,6 @@
 } 
 
 .intro {
-    /* font-size: 2.2vh;
-    position: absolute;
-    right: 25vw;
-    top: 25vh;
-    width: 30vw;
-    margin-left: 3vw; */
     float: left;
     margin-top: 25vh;
     padding-left: 2vw;
@@ -565,14 +559,18 @@ img.o {
 } 
 
 
+.dropdown-content2 {
+    margin-left: -2vw;
+    border-radius: 5px;
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown2:hover .dropdown-content {
+/* .dropdown2:hover .dropdown-content {
     display: block;
     
-}
+} */
 
 .dropdown3 {
     margin-left: 5vw;
@@ -590,6 +588,10 @@ img.o {
     width: 8vw;
     margin: 0px auto auto -50px;
     display: none;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .links1 {
@@ -599,7 +601,7 @@ img.o {
 
 .bg {
     background: white;
-    width: 10vw;
+    width: 12vw;
 }
 .links:hover {
     background-color: var(--transparent-gray);
@@ -618,7 +620,11 @@ img.o {
 
 #urgh1 {
     margin-bottom: 3.4vh;
-    color: #27333f;
+    color: white;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 
@@ -808,7 +814,13 @@ a.recolor:hover {
         width: 100%;
         height: 8vh;
         padding-top: 1vh;
+        text-align: center;
+
     }
+    .footer-ondernemingv {
+        background-color: #7791ac;
+    }
+
 
     nav {
         display: none;
@@ -826,6 +838,7 @@ a.recolor:hover {
 
     }
 
+    
     .layout1 {
         height: 100%;
     }
@@ -900,16 +913,21 @@ a.recolor:hover {
     z-index: 200;
     right: 0;
     text-align: center;
-    top: 10vh;
+    top: 9.8vh;
+    
   }
   
   .dropdown-content-html a {
     color: black;
-    padding: 12px 16px;
+    padding: 20px 16px;
     text-decoration: none;
     display: block;
     z-index: 200;
     top: 4.9vh;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
   }
   
   .dropdown a:hover {
@@ -922,7 +940,7 @@ a.recolor:hover {
     font-size: .9rem;
     display: inline;
     color: var(--orange);
-    margin: 2vh 1vw;
+    margin: 2vh 3vw;
 
     font-family: "Oxanium", sans-serif;
     font-optical-sizing: auto;
@@ -931,7 +949,7 @@ a.recolor:hover {
   }
 
 
-    /* MOBILE Eigen onderneming*/
+    /* -------------------------------MOBILE Eigen onderneming---------------------------------------------------*/
     .dropdown3, #bsimgleft, #bsimgright, #vid {
         display: none;
     }
@@ -951,17 +969,43 @@ a.recolor:hover {
         margin: 3vh 2vw;
     }
 
+    .footer-onderneming {
+        background-color: #7791ac;
     }
 
+    .footer-onderneming>.footer-links {
+            color: white;
+    }
 
-/*Desktop*/
+    .dropdown-bg-ond {
+        background-color: white;
+        border-bottom: 1px #002db3 solid;
+        box-shadow: 0 3px 10px rgb(0, 0, 0, .5);
+    }
+    
+
+    #vid1 {
+        width: 90%;
+        height: auto;
+        margin: 0 3vw 0;
+    }
+
+    #titelvid {
+        margin: 1.8vh 0 0 3vw;
+    }
+}
+
+
+/*--------------------------------------Desktop--------------------------------*/
 @media only screen and (min-width: 600px) {
-    .dropdown-html, .dropdown-content-html,  .html-dropdown-img {
+    .dropdown-html, .dropdown-content-html,  .html-dropdown-img, .footer-links, #vid1{
         display: none;}
 
     .footer-html {
         display: none;
+        
     }
     
+
 }
 

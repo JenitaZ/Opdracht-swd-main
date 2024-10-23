@@ -10,7 +10,7 @@
     --font-size: 1.25rem;
     --line-height: 1.75rem;
     --topnav-color: antiquewhite;
-    --witte-chocolade: #fffcf2;
+    --witte-chocolade: #fdfaf7;
     
     /*mysql*/
     --bg-gradient: linear-gradient(166deg, rgba(106,39,0,1) 0%, rgba(99,36,0,1) 0%, rgba(40,2,0,1) 0%, rgba(0,0,0,1) 65%);
@@ -19,12 +19,12 @@
     --orange: #da6739;; 
     --gray-ish: #3f3d39;
     --header-color-html: #2c2626;
-    --nav-bg: #d5cbc2;
+    --nav-bg: #e7dbd0;
     
     /* javascript */
-    --box-color: #eff7fb;
-    --title-color-js: #04507c;
-    --border-color: #20a9f8;
+    --box-color: rgb(242, 196, 151, .6);
+    --title-color-js: var(--gray-ish);
+    --border-color: var(--orange);
     /*eigen onderneming*/
     --transparent-gray: rgb(242, 242 242 .8); 
    
@@ -91,7 +91,7 @@ nav {
 
 
 .color {
-    background-color: #d5cbc2;
+    background-color: var(--nav-bg);
 }
 
 .htmlnav {
@@ -350,12 +350,14 @@ img.o {
 }
 
 .mainContentHTML {
-    float: left;
+    /* float: right; */
     width: 80vw;
     max-height: 100%;
-    margin-top: 3vh;
-    padding-bottom: 80px;
+    /* margin-top: 3vh;
+    padding-bottom: 80px; */
     line-height: 170%;
+    position: absolute;
+    left: 15vw;
 
 
 }
@@ -439,6 +441,10 @@ img.o {
     color: var(--title-color-js);
 }
 
+body.jsbody {
+    background: var(--witte-chocolade)
+}
+
 #js_nav {
     background: white;
     background: url('https://media.istockphoto.com/id/1371944453/vector/blue-abstract-wave-background.jpg?s=612x612&w=0&k=20&c=uaCU_xpsKQLnbnvJH99iAi9uUqEAoS4jcyDwHXlLq5M=');
@@ -473,19 +479,18 @@ img.o {
 }
 
 #jsimg {
-    height: 43.2vh;
+    height: 48vh;
     width: 35vw;
-    float: right;
     position: absolute;
-    top: 60vh;
-    left: 55vw;
+    top: 59.8vh;
+    right: 6vw;
 }
 
 .box {
     background-color: var(--box-color);
-    width: 32.5vw;
+    width: 40vw;
     height: fit-content;
-    margin-left: 5vw;
+    margin: 3vh 0 2vh 5vw;
     padding: 1vh;
     overflow: scroll;
     font-size: var(--font-size);   
@@ -509,7 +514,7 @@ img.o {
 
 .box3 {
     background-color: var(--box-color);
-    width: 65vw;
+    width: 70vw;
     height: fit-content;
     margin-left: 5vw;
     padding: 1vh;

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Roboto:ital,wght@0,400;0,700;0,900;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap');
 
 :root {  
     --font-family: Tahoma, Geneva, Tahoma, sans-serif;
@@ -12,12 +13,13 @@
     --witte-chocolade: #fffcf2;
     
     /*mysql*/
-    --bg-gradient: linear-gradient(340deg, rgba(0,2,0,1) 0%, rgba(10,8,27,20) 28%, rgba(22,11,64,1) 43%, rgba(29,18,81,1) 74%, rgba(10,78,111,1) 100%, rgba(4,115,138,1) 100%);
-    --box-shadow-color: #1a1aff;
+    --bg-gradient: linear-gradient(166deg, rgba(106,39,0,1) 0%, rgba(99,36,0,1) 0%, rgba(40,2,0,1) 0%, rgba(0,0,0,1) 65%);
+    --box-shadow-color: #002db3;
     /*html*/
     --orange: #da6739;; 
     --gray-ish: #3f3d39;
     --header-color-html: #2c2626;
+    --nav-bg: #d5cbc2;
     
     /* javascript */
     --box-color: #eff7fb;
@@ -39,11 +41,14 @@
     display: none;
 }
 
+
+
 #home, #home1 {
     height: 100vh;
-    overflow: hidden;
-    background-color: white;
+    overflow: hidden;}
 
+#home{
+    background-color: white;
 }
 
 
@@ -52,10 +57,11 @@
     background: var(--bg-gradient);
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: var(--witte-chocolade);;
 }
 .layout1 {
     overflow: scroll;
-    background-color: white;
+    background-color: var(--witte-chocolade);
     height: 100%;
 
 } 
@@ -88,6 +94,7 @@ nav {
     float: right;
     margin-top: 1.5vh;
 }
+
 
 .color {
     background-color: #d5cbc2;
@@ -134,7 +141,12 @@ header {
 
 .ornage {
     color: var(--orange);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
+
 
 .ornage:hover {
     color: white;
@@ -375,6 +387,7 @@ img.o {
 
 .onderneming_titel {
     margin:  3vh 3vw;
+    padding-bottom: 2vh;
 }
 #opbouwimg {
     width: 100vw;
@@ -444,6 +457,22 @@ img.o {
 #js_navcolor {
     background: white;
 }
+
+.js_nav {
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.mysql_nav{
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white
+}
+
 .eh {
     font-size: var(--font-size-headings);
     margin-top: 1vh;
@@ -452,6 +481,10 @@ img.o {
 #jsimg {
     height: 43.2vh;
     width: 35vw;
+    float: right;
+    position: absolute;
+    top: 60vh;
+    left: 55vw;
 }
 
 .box {
@@ -546,8 +579,10 @@ img.o {
     margin-top: 0px;
     z-index: 2;
     position: absolute;
+
     
 }
+
 .links {
     padding: 12px 0 10px 55px;
     text-decoration: none;
@@ -583,7 +618,7 @@ img.o {
 
 #urgh1 {
     margin-bottom: 3.4vh;
-
+    color: #27333f;
 }
 
 
@@ -619,6 +654,10 @@ img.o {
 }
 
 /*------------------------------------eigen onderneming----------------------------------------------------------*/
+
+.eo-bg {
+    background-color: #7791ac;
+}
 
 #bsimgleft {
     float: left;
@@ -668,7 +707,7 @@ img.o {
     left: 45vw;
     width: 70vw;
     height: 49vh;
-    box-shadow: 25px 25px 2px 1px var(--box-shadow-color);
+    box-shadow: 25px 25px 2px 1px var(--orange);
 }
 /* 
 #shadow {
@@ -717,11 +756,15 @@ img.o {
 
 #recolor {
     border: none;
-    background-color: rgb(0, 0, 0, .4)
+    background-color: rgb(0, 0, 0, .5);
 }
 
+a.recolor {
+    background-color: rgb(0, 0, 0, .9);
+}
 a.recolor:hover {
     color: white;
+    background-color: rgb(0, 0, 0, .7);
 }
 
 
@@ -741,7 +784,7 @@ a.recolor:hover {
     width: 31vw;
 }
 
-/* MOBILE VERSION */
+/* MOBILE HTML*/
 
 @media only screen and (max-width: 600px) {
 
@@ -763,7 +806,8 @@ a.recolor:hover {
         background: var(--header-color-html);
         bottom: 0;
         width: 100%;
-        height: 7vh;
+        height: 8vh;
+        padding-top: 1vh;
     }
 
     nav {
@@ -873,12 +917,51 @@ a.recolor:hover {
 }
   
   .show {display: block;}
-}
 
-  
+  .footer-links{
+    font-size: .9rem;
+    display: inline;
+    color: var(--orange);
+    margin: 2vh 1vw;
+
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+    /* MOBILE Eigen onderneming*/
+    .dropdown3, #bsimgleft, #bsimgright, #vid {
+        display: none;
+    }
+
+    #onderneming_main {
+        width: 100vw;
+        margin: 0;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-bottom: 5vh;
+    }
+
+    .onderneming_maintext {
+        margin: 3vh 2vw;
+    }
+
+    }
+
+
 /*Desktop*/
 @media only screen and (min-width: 600px) {
     .dropdown-html, .dropdown-content-html,  .html-dropdown-img {
+        display: none;}
+
+    .footer-html {
         display: none;
     }
+    
 }
+

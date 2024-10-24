@@ -22,7 +22,7 @@
     --nav-bg: #e7dbd0;
     
     /* javascript */
-    --box-color: rgb(242, 196, 151, .6);
+    --box-color: white;
     --title-color-js: var(--gray-ish);
     --border-color: var(--orange);
     /*eigen onderneming*/
@@ -63,7 +63,6 @@
 .home-index {
     overflow: hidden;
 }
-
 .layout1 {
     overflow: scroll;
     background-color: var(--witte-chocolade);
@@ -496,7 +495,9 @@ body.jsbody {
     margin: 3vh 0 2vh 5vw;
     padding: 1vh;
     overflow: scroll;
-    font-size: var(--font-size);   
+    font-size: var(--font-size);  
+    border-left: 4px solid var(--border-color);
+    border: 2px var(--orange) dashed; 
 }
 
 /* .stuk {
@@ -511,8 +512,8 @@ body.jsbody {
     padding: 1vh;
     overflow: hidden;
     font-size: var(--font-size);
-    border-left: 4px solid var(--border-color);
     color: var(--title-color-js);
+    
 }
 
 .box3 {
@@ -523,6 +524,8 @@ body.jsbody {
     padding: 1vh;
     overflow: scroll;
     font-size: var(--font-size);
+    border-left: 4px solid var(--border-color);
+    border: 2px var(--orange) dashed;
 }
 
 
@@ -968,7 +971,7 @@ body.jsbody {
 
     #onderneming_main {
         width: 90%;
-        margin: 2vw auto 5vh 6vw;
+        margin: 0vw auto 5vh 6vw;
         position: absolute;
         top: 10vh;
         left: 0;

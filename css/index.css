@@ -43,11 +43,11 @@
 
 
 
-#home, #home1 {
+.home, #home1 {
     height: 100vh;
-    overflow: hidden;}
+}
 
-#home{
+.home{
     background-color: white;
 }
 
@@ -59,11 +59,15 @@
     background-repeat: no-repeat;
     background-color: var(--witte-chocolade);;
 }
+
+.home-index {
+    overflow: hidden;
+}
+
 .layout1 {
     overflow: scroll;
     background-color: var(--witte-chocolade);
     height: 100%;
-
 } 
 
 .intro {
@@ -79,7 +83,7 @@
     height: 90vh;
     color: var(--gray-ish)
 }
-nav {
+.srs {
     font-size: var(--font-size);
     color: black;
     text-align: center;
@@ -88,7 +92,6 @@ nav {
     float: right;
     margin-top: 1.5vh;
 }
-
 
 .color {
     background-color: var(--nav-bg);
@@ -470,7 +473,7 @@ body.jsbody {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    color: white
+    color: white;
 }
 
 .eh {
@@ -602,18 +605,18 @@ body.jsbody {
 .links1 {
     background-color: rgb(0, 0, 0, .4);
     color: white;
+    width: 15vw;
+    
 }
 
 .bg {
     background: white;
     width: 12vw;
 }
-.links:hover {
-    background-color: var(--transparent-gray);
 
-}
+
 .links1:hover {
-    background-color: rgb(0, 0, 0, .1);
+
     color: white;
 }
 #urgh {
@@ -762,6 +765,7 @@ body.jsbody {
 .recolor {
     color: white;
     line-height: 1.2;
+    
 
 }
 
@@ -770,18 +774,15 @@ body.jsbody {
     background-color: rgb(0, 0, 0, .5);
 }
 
-a.recolor {
-    background-color: rgb(0, 0, 0, .9);
-}
-a.recolor:hover {
-    color: white;
-    background-color: rgb(0, 0, 0, .7);
+.recolor:hover {
+    color:white;
 }
 
 
 
 .position {
-    margin-top: -2px;
+    margin-top: -.9vh;
+    background: linear-gradient(0deg, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0) 90%);
 }
 
 .txtmarkup {
@@ -839,11 +840,16 @@ a.recolor:hover {
         height: max-content;
         width: 90%;
         margin: 1vw;
-        padding-bottom: 10vh;
+        padding-bottom: 15vh;
+        position: absolute;
+        left: 0;
+        bottom: 5;
 
     }
 
-    
+    #leeruk {
+        padding-bottom:17vh;
+    }
     .layout1 {
         height: 100%;
     }
@@ -919,6 +925,7 @@ a.recolor:hover {
     right: 0;
     text-align: center;
     top: 9.8vh;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, .5);
     
   }
   
@@ -955,19 +962,18 @@ a.recolor:hover {
 
 
     /* -------------------------------MOBILE Eigen onderneming---------------------------------------------------*/
-    .dropdown3, #bsimgleft, #bsimgright, #vid {
+    .dropdown3, #bsimgleft, #bsimgright, #vid, #hidethis {
         display: none;
     }
 
     #onderneming_main {
-        width: 100vw;
-        margin: 0;
+        width: 90%;
+        margin: 2vw auto 5vh 6vw;
         position: absolute;
         top: 10vh;
         left: 0;
         overflow-y: scroll;
         overflow-x: hidden;
-        margin-bottom: 5vh;
     }
 
     .onderneming_maintext {
@@ -998,6 +1004,12 @@ a.recolor:hover {
     #titelvid {
         margin: 1.8vh 0 0 3vw;
     }
+
+    ol.verzekeringen {
+        padding-bottom: 5vh;
+    }
+
+
 }
 
 

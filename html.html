@@ -17,7 +17,10 @@
     </head>
     
     <body class="layout1 berg">
-        <div class="dropdown-html">            <!-- -------------------mobile nav--------------------------- -->
+
+
+<!-- -------------------mobile nav--------------------------- -->
+        <nav class="dropdown-html">
             <img src="img\dropdown-menu.png" onclick="myFunction()" class="dropbtn">
                     <div id="myDropdown" class="dropdown-content-html">
                         <a href="index.html">Home</a>
@@ -25,12 +28,13 @@
                         <a href="De beroepsveld.html">Het beroepenveld</a>
                         <a href="doorgroeimogelijkheden.html">Onderzoek doorgroeimogelijkheden</a>
                     </div>
-        </div>
+        </nav>
 
-                <!-- sssssssssssssssssssssssssssssssssss -->
-        <div class="color-bg"></div>
+<!------ sssssssssssssnav desktop ----------->
+
+        
         <header id="headerhtml">
-            <nav>
+            <nav class="srs">
                 <a href="index.html" class="ornage">Home</a>
                 <a href="De opleiding.html" class="ornage">De opleiding</a>
                 <a href="De beroepsveld.html" class="ornage">Het beroepenveld</a>
@@ -38,22 +42,16 @@
             </nav>
 
             <article class="navimg, imglpt">
-                
                 <a href="index.html">    
-                    <a href="index.html">    
-                        <img class= "navimg" src="img\laptoploglightv2.png" alt="logo laptop">
-                        
-                    </a>
+                    <img class= "navimg" src="img\laptoploglightv2.png" alt="logo laptop">   
                 </a>
-           
-                <!-- sssssssssssssssssssssssssssssssssss -->
-
             </article>
-            
+
         </header>
-        <!-- ---------------desktop nav------------------------------- -->
+
+
         <aside class="left-nav blep color">
-            <div class="lnavlinks">
+            <nav class="lnavlinks">
                 <a href="#HTML" class="left-links htmlnav1"><h3>HTML</h3></a>
                 <a href="#opbouw" class="left-links htmlnav">Opbouw</a>
                 <a href="#luk" class="left-links htmlnav">Leeruitkomsten</a>
@@ -70,13 +68,11 @@
                 <a href="Onderneming.html" class="left-links htmlnav1"><h3>Eigen Onderneming</h3></a>
                 <a href="Motion Plannen.html" class="left-links htmlnav1"><h3>Motion Plannen</h3></a>
                 <a href="ui ux design.html" class="left-links htmlnav1"><h3>UI/UX Design</h3></a>
-                
-            </div>
-
-          
+            </nav>
         </aside>
 
-        <div class="mainContentHTML">
+
+        <main class="mainContentHTML">
             
             <section class="first">
                 <h1 class="onderneming_titel" id="up">HTML</h1>
@@ -84,30 +80,32 @@
                         HTML kan ook deels de vormgeving en styling kan verzorgen, doen we dit meestal met een andere taal: CSS (Cascading Style Sheet).
                         <br>Het is de standaard opmaaktaal voor webpagina's. <br>Documenten in HTML kunnen geopend en gelezen worden door een webbrowser om vervolgens als webpagina weergegeven te worden</p>
             </section>
+
                 <img src="img\opbouw_html.png" alt="Voorbeeld van de opbouw van een HTML pagina" id="opbouwimg">
                 
+
             <section id="opbouw" class="first">  </br>  
                 <h1 class="onderneming_titel">Opbouw html bestand</h1>
                 <p class="left-text2 ">Hier is een voorbeeld hoe de opbouw van een HTML pagina eruit ziet,</br>
                             Een HTML pagina begint met een DOCTYPE-declaratie, wat informatie aan de browser geeft over wat voor document type het is.</br></br>
                             Vervolgens krijg je de tag die het HTML document opent, gevolgd door de “head” tag.</br> Binnen deze “head” tag geven we onder andere de titel en de links van de stylesheets door. Vlak onder de “head” komt de “body”.</br> Binnen de “body” komt de gehele opbouw en inhoud van de pagina.</p>
             </section>       
-                    
+                 
+            
             <section id="leeruk" class="first">
                     <h1 class="onderneming_titel">Leeruitkomsten</h1>
                     <p class="left-text2">Je gaat in deze modulus dus leren hoe je de basis van je webpagina maak en hoe je de structuur ervan bepaald. 
             </section>
+        </main>
+
         
-
-        </div>
-
         <footer class="footer-html">
             <a href="#HTML" class="footer-links">HTML</a>
             <a href="javascript.html" class="footer-links">JS</a>
             <a href="css.html" class="footer-links">CSS</a>
             <a href="php.html" class="footer-links">PHP</a>
             <a href="mysql.html" class="footer-links">MySQL</a><br>
-            <a href="Onderneming.html" class="footer-links">Eigen Onderneming</a>
+            <a href="Onderneming.html" class="footer-links"><u>Eigen Onderneming</u></a>
             <a href="Motion Plannen.html" class="footer-links">Motion Plannen</a>
             <a href="ui ux design.html" class="footer-links">UI/UX</a>
         </footer>

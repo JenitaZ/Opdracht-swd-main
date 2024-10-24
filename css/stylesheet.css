@@ -14,6 +14,7 @@ footer {
     border-top: black 1px solid;
     position: sticky;
     bottom: 0;
+    z-index: 100;
 }
 <!--Doe deze in je body-->
 
@@ -180,5 +181,8 @@ img.beroep {
     max-width: 30vh;
 }
 img.plan {
-    max-width: 50%
+    max-width: 50%;
+}
+img.phpimg {
+    max-width: 40vh;
 }
